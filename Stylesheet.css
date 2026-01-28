@@ -1,45 +1,107 @@
 /* header */
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height:70px;
+    height: 70px;
     /* background-color:rgb(5, 5, 61); */
-    background: linear-gradient(90deg, #05054a, #0b0f6b);
+    background: linear-gradient(90deg, hsl(240, 88%, 10%), #050756);
     padding: 20px 50px;
 }
 
-nav ul{
+nav ul {
     display: flex;
     justify-content: center;
-
+    align-items: center;
+    font-size: 15px;
 }
 
 nav ul li {
     list-style: none;
-    margin:0 23px;
+    margin: 0 23px;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
-nav ul li a:hover{
-    color:rgb(74, 74, 210);
-    font-size:1.02rem;
+nav ul li a:hover {
+    color: rgb(161 98 220);
 }
 
-.vertical-line {
-  width: 2px;       
-  height: 100px;   
-  background-color: #38bdf8;
-}
-
-
- .left{
+.left {
     font-size: 1.7rem;
- }
+}
 
+.underline-slide {
+    position: relative;
+    text-decoration: none;
+}
 
+.underline-slide::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: rgb(161 98 220);
+    transition: width 0.3s ease;
+}
 
+.underline-slide:hover::after {
+    width: 100%;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-divider {
+  height: 30px;              
+  width: 2px;                
+  background-color: #53456b; 
+  margin: 0 20px;
+}
+
+button.btn {
+    background-color: rgb(161 98 220);
+    color: white;
+    padding: 8px;
+    border: 2px solid lavender;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #b38df8;
+  border-color: #b38df8;
+}
+
+/* footer */
+footer {
+    background-color: #171627;
+}
+
+.Footer {
+    display: flex;
+    padding: 43px 90px;
+    justify-content: space-evenly;
+}
+
+.Footer ul {
+    list-style: none;
+}
+
+.Footer>div {
+    width: 150px;
+}
+
+footer .footers-rights {
+    text-align: center;
+    color: grey;
+    padding: 30px 0;
+}

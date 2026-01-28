@@ -103,16 +103,45 @@ footer {
     justify-content: space-evenly;
 }
 
-.Footer ul {
+/* .Footer ul {
     list-style: none;
-}
+} */
 
-.Footer>div {
+/* .Footer>div {
     width: 150px;
-}
+} */
 
 footer .footers-rights {
     text-align: center;
     color: grey;
     padding: 30px 0;
+}
+
+.Footer i {
+  margin-right: 8px;
+  font-size: 18px;
+  color: #b88cff;
+}
+
+.Footer div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.Footer a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.Footer a:hover {
+  color: #b88cff;
+  cursor: pointer;
+}
+
+.Footer a:hover i {
+  color: #ffffff;
 }

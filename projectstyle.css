@@ -8,10 +8,12 @@
 }
 
 .projects-hero p {
-  color: var(--text-muted);
+  color: #cfcfcf;
   margin-top: 1rem;
 }
 
+
+/* ===== Projects Section ===== */
 
 .projects-section {
   padding: 4rem 2rem;
@@ -23,12 +25,11 @@
   gap: 2rem;
 }
 
-
 .project-card {
-  background: var(--bg-secondary);
+  background: rgba(255, 255, 255, 0.06);
   padding: 2rem;
   border-radius: 20px;
-  border: 1px solid var(--border-color);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -38,14 +39,17 @@
 }
 
 .project-card h3 {
-  color: var(--accent);
+  color: #a78bfa;
   margin-bottom: 1rem;
 }
 
 .project-card p {
   font-size: 0.95rem;
+  color: #e0e0ff;
 }
 
+
+/* ===== Project Tags ===== */
 
 .project-tags {
   margin: 1rem 0;
@@ -58,10 +62,15 @@
   border-radius: 20px;
   font-size: 0.75rem;
   margin: 0.2rem;
+  color: #d6d6ff;
 }
+
+
+/* ===== Project Links ===== */
 
 .project-links a {
   margin-right: 1rem;
-  color: var(--accent);
+  color: #a78bfa;
   font-weight: 500;
 }
+

@@ -1,28 +1,72 @@
-.hero{
+.hero {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin:80px 0;
+    margin: 80px 0;
 }
 
-.hero > div{
-    width:30%;
+.hero>div {
+    width: 30%;
 }
 
-.leftsection{
+.leftsection {
     /* background-color: red; */
     font-size: 2.5rem;
 }
 
-.rightsection img{
-    width: 80%;
-    margin: 80px 0;
+.rightsection img {
+    margin: 200px 0;
 }
 
- .purple{
-    color:rgb(171, 115, 224);
- }
+.purple {
+    color: rgb(171, 115, 224);
+}
 
- #element{
-    color:rgb(171, 115, 224);
- }
+.img-wrapper {
+    position: relative;
+    width: 320px;
+    height: 480px;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    /* border-radius: 50%; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrapper::before{
+    content: "";
+    position:absolute;
+    inset:-60px;
+    background: radial-gradient(circle, rgba(56,189,248,0.8), transparent 70%);
+    z-index: -1;
+    filter: blur(200px);
+
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes blobMove {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 40% 60% 70% 40% / 40% 70% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+.img-wrapper {
+  animation: blobMove 6s ease-in-out infinite;
+}
+
+#element {
+    color: rgb(171, 115, 224);
+}
+

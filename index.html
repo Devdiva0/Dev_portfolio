@@ -12,7 +12,10 @@
     * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
     }
+
 
     body {
         background-color: rgb(6, 6, 43);
@@ -45,21 +48,22 @@
 
                 <!-- Load library from the CDN -->
                 <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
-                
+
                 <!-- Setup and start animation! -->
                 <script>
                     var typed = new Typed('#element', {
-                        strings: ['Software Developer.', 'Web Developer.','Data Analyst.'],
+                        strings: ['Software Developer.', 'Web Developer.', 'Data Analyst.'],
                         typeSpeed: 50,
                     });
                 </script>
             </div>
             <div class="rightsection">
-                <img src="ProfilePic.jpeg" alt="">
+                <div class="img-wrapper">
+                    <img src="ProfilePic.jpeg" alt="profile">
+                </div>
             </div>
         </section>
     </main>
 </body>
 
 </html>
-

@@ -73,4 +73,6 @@
   color: #a78bfa;
   font-weight: 500;
 }
-
+.project-links a:hover {
+  color: #c4b5fd;
+}

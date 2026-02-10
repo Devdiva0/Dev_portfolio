@@ -103,14 +103,6 @@ footer {
     justify-content: space-evenly;
 }
 
-/* .Footer ul {
-    list-style: none;
-} */
-
-/* .Footer>div {
-    width: 150px;
-} */
-
 footer .footers-rights {
     text-align: center;
     color: grey;
@@ -144,4 +136,42 @@ footer .footers-rights {
 
 .Footer a:hover i {
   color: #ffffff;
+}
+
+
+/* ===== Responsive Navbar ===== */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .right {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-divider {
+    display: none;
+  }
+}
+/* ===== Responsive Footer ===== */
+@media (max-width: 768px) {
+  .Footer {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .Footer div {
+    justify-content: center;
+  }
 }
